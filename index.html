@@ -116,14 +116,12 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Dr. Edward D. Lee</h2>
-									<div style="width: 100%;">
-										<p id="lee-short" style="display: block; cursor: pointer; overflow: hidden; text-overflow: ellipsis; max-height: 3.5em; line-height: 1.75; width: 100%; background: transparent; margin: 0px 0px 2em;" onclick="toggleLeeBio()">
-											Edward D. Lee is a postdoc at the Complexity Science Hub, where he received the Austrian Science Fund ESPRIT Fellowship... <span style="color:#aaa; font-size:0.9em;">(click to read more)</span>
-										</p>
-										<p id="lee-full" style="display: none; width: 100%; background: transparent; margin: 0px 0px 2em; line-height: 1.75; cursor: pointer;" onclick="toggleLeeBio()">
-											Edward D. Lee is a postdoc at the Complexity Science Hub, where he received the Austrian Science Fund ESPRIT Fellowship and was previously at the Santa Fe Institute. He has a PhD in Theoretical Physics from Cornell University—where he received a National Science Foundation Graduate Research Fellowship—and a BA in Physics from Princeton University. He has been invited to panels on the science of violence (Santa Fe Council on Int’l Relations) and on the physics of the 2021 and 2024 Nobel Prizes as well as an invited lecturer to the German Physical Society, LSE, King's College, and the universities of Amsterdam, Potsdam, Northwestern, Oxford, and Bristol. He is an Associate Editor for the ACM Transactions on Social Computing. <span style="color:#aaa; font-size:0.9em;">(click to collapse)</span>
-										</p>
-									</div>
+									<p id="lee-short" style="display:block; cursor:pointer; overflow:hidden; text-overflow:ellipsis; max-height:3.5em; line-height:1.75; width:100%; background:transparent; margin:0 0 2em 0;" onclick="toggleLeeBio()">
+									Edward D. Lee is a postdoc at the Complexity Science Hub, where he received the Austrian Science Fund ESPRIT Fellowship... <span style="color:#aaa; font-size:0.9em;">(click to read more)</span>
+									</p>
+									<p id="lee-full" style="display:none; width:100%; background:transparent; margin:0 0 2em 0; line-height:1.75; cursor:pointer;" onclick="toggleLeeBio()">
+									Edward D. Lee is a postdoc at the Complexity Science Hub, where he received the Austrian Science Fund ESPRIT Fellowship and was previously at the Santa Fe Institute. He has a PhD in Theoretical Physics from Cornell University—where he received a National Science Foundation Graduate Research Fellowship—and a BA in Physics from Princeton University. He has been invited to panels on the science of violence (Santa Fe Council on Int’l Relations) and on the physics of the 2021 and 2024 Nobel Prizes as well as an invited lecturer to the German Physical Society, LSE, King's College, and the universities of Amsterdam, Potsdam, Northwestern, Oxford, and Bristol. He is an Associate Editor for the ACM Transactions on Social Computing. <span style="color:#aaa; font-size:0.9em;">(click to collapse)</span>
+									</p>
 									<ul class="actions">
 										<li><a href="https://eltrompetero.github.io/index.html" class="button">Learn more</a></li>
 									</ul>
@@ -259,17 +257,15 @@
 		<!-- Scripts -->
 			<script>
 			function toggleLeeBio() {
-				var shortBio = document.getElementById('lee-short');
-				var fullBio = document.getElementById('lee-full');
-				if (shortBio.style.display === 'none') {
-					shortBio.style.display = 'block';
-					fullBio.style.display = 'none';
+				var short = document.getElementById('lee-short');
+				var full = document.getElementById('lee-full');
+				if (short.style.display === 'none') {
+					short.style.display = 'block';
+					full.style.display = 'none';
 				} else {
-					shortBio.style.display = 'none';
-					fullBio.style.display = 'block';
+					short.style.display = 'none';
+					full.style.display = 'block';
 				}
-				// Ensure only the text expands/collapses, not the image or layout
-				// No changes to image or parent container sizing
 			}
 			</script>
 			<script src="assets/js/jquery.min.js"></script>
